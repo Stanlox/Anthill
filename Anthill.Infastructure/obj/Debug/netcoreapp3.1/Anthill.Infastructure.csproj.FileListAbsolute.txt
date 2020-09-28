@@ -1,0 +1,12 @@
+D:\Visual Studio\Anthill\Anthill.Infastructure\bin\Debug\netcoreapp3.1\Anthill.Infastructure.deps.json
+D:\Visual Studio\Anthill\Anthill.Infastructure\bin\Debug\netcoreapp3.1\Anthill.Infastructure.dll
+D:\Visual Studio\Anthill\Anthill.Infastructure\obj\Debug\netcoreapp3.1\Anthill.Infastructure.csprojAssemblyReference.cache
+D:\Visual Studio\Anthill\Anthill.Infastructure\obj\Debug\netcoreapp3.1\Anthill.Infastructure.AssemblyInfoInputs.cache
+D:\Visual Studio\Anthill\Anthill.Infastructure\obj\Debug\netcoreapp3.1\Anthill.Infastructure.AssemblyInfo.cs
+D:\Visual Studio\Anthill\Anthill.Infastructure\bin\Debug\netcoreapp3.1\Anthill.Infastructure.runtimeconfig.json
+D:\Visual Studio\Anthill\Anthill.Infastructure\bin\Debug\netcoreapp3.1\Anthill.Infastructure.runtimeconfig.dev.json
+D:\Visual Studio\Anthill\Anthill.Infastructure\obj\Debug\netcoreapp3.1\Anthill.Infastructure.genruntimeconfig.cache
+D:\Visual Studio\Anthill\Anthill.Infastructure\bin\Debug\netcoreapp3.1\Anthill.Infastructure.pdb
+D:\Visual Studio\Anthill\Anthill.Infastructure\obj\Debug\netcoreapp3.1\Anthill.Infastructure.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Anthill\Anthill.Infastructure\obj\Debug\netcoreapp3.1\Anthill.Infastructure.dll
+D:\Visual Studio\Anthill\Anthill.Infastructure\obj\Debug\netcoreapp3.1\Anthill.Infastructure.pdb
