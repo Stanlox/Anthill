@@ -1,4 +1,5 @@
-﻿using Anthill.Infastructure.Models;
+﻿using Anthill.Infastructure.Entities;
+using Anthill.Infastructure.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Anthill.Infastructure.Data
         public DbSet<Project> Projects { get; set; }
         public DbSet<CategoryProjects> Categories { get; set; }
         public DbSet<Favourites> Favourites { get; set; }
+        public DbSet<UserQuestion> UserQuestions { get; set; }
 
         public static async Task CreateAdminAccount(IServiceProvider serviceProvider, IConfiguration configuration)
         {

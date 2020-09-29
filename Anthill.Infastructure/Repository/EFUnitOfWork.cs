@@ -16,6 +16,7 @@ namespace Anthill.Infastructure.Repository
         public IProjectCategoryRepository CategoryProjects { get; }
         public IFavouriteRepository Favourites { get; }
         public ISearchProjectService Search { get; }
+        public IUserQuestion UserQuestion { get; }
 
         public EFUnitOfWork(ApplicationDbContext dbContext)
         {
@@ -23,6 +24,7 @@ namespace Anthill.Infastructure.Repository
             Projects = new ProjectRepository(dbContext);
             CategoryProjects = new CategoryRepository(dbContext);
             Favourites = new FavouriresRepository(dbContext);
+            UserQuestion = new UserQuestionsRepository(dbContext);
         }
 
         public virtual void Dispose(bool disposing)

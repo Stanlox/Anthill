@@ -27,6 +27,8 @@ namespace Anthill.Infastructure.Data
             services.AddTransient<IFavouriteRepository, FavouriresRepository>();
             services.AddTransient<ISearchProjectService, SearchService>();
             services.AddTransient<ServiceRepository>();
+            services.AddTransient<IUserQuestion, UserQuestionsRepository>();
+
             var mapperConfig = new MapperConfiguration(x =>
             {
                 x.AddProfile(new MappingProfile());

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Anthill.API.Filters;
+using Anthill.API.Interfaces;
 using Anthill.API.Models;
 using Anthill.API.Services;
 using Anthill.Infastructure.Data;
@@ -43,8 +44,12 @@ namespace Anthill.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfastructure(Configuration);
-            services.AddTransient<EmailService>();
-            services.AddCors();
+            services.AddTransient<IEmailService, EmailService>();
+            services.AddCors(options => options.AddPolicy("AllowLocalhost3000", builder => builder
+                    .WithOrigins("http://localhost:3000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod())
+               );
             services.AddControllers();
             services.AddTransient<IUnitOfWork, EFUnitOfWork>();
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -88,7 +93,7 @@ namespace Anthill.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            app.UseCors("AllowLocalhost3000");
             app.UseAuthentication();
             app.UseAuthorization();
 

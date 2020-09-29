@@ -10,5 +10,6 @@ namespace Anthill.Infastructure.Interfaces
         public IProjectCategoryRepository CategoryProjects { get; }
         public IProjectRepository Projects { get; }
         public IFavouriteRepository Favourites { get; }
+        public IUserQuestion UserQuestion { get; }
     }
 }
